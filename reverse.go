@@ -29,7 +29,7 @@ func Init(s []byte) (*List, error) {
 	return head, nil
 }
 
-// Print return a linked list as a string to print.
+// Print returns a linked list as a string to print.
 func Print(list *List) string {
 	result := ""
 	curr := list
@@ -42,7 +42,7 @@ func Print(list *List) string {
 	return result
 }
 
-// LinkedList reverse a linked list.
+// LinkedList reverses a linked list.
 func LinkedList(node *List) (*List, error) {
 	if node == nil {
 		return nil, errors.New("list is empty")
@@ -60,7 +60,7 @@ func LinkedList(node *List) (*List, error) {
 	return prev, nil
 }
 
-// String reverse a string in bytes.
+// String reverses a string in bytes.
 func String(s []byte) ([]byte, error) {
 	if string(s) == "" {
 		return nil, errors.New("string is empty")
